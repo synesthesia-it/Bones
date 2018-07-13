@@ -1,0 +1,24 @@
+{
+    "version": "0.1",
+    "sourcesBaseFolder": "Sources/Bones",
+    "bones": {
+        "view": {
+            "createSubfolder": true,
+            "subBones": ["itemViewModel", "itemView"],
+            "files": [],
+            "folders": ["App", "Views"]
+        },
+        "itemViewModel": {
+            "createSubfolder": false,
+            "subBones": [],
+            "placeholder": "Bone",
+            "files": ["ItemViewModel/BoneItemViewModel.swift"]
+        },
+        "itemView": {
+            "createSubfolder": false,
+            "subBones": [],
+            "placeholder": "Bone",
+            "files": ["ItemView/BoneItemView.swift", "ItemView/BoneItemView.xib"]
+        }
+    }
+}
