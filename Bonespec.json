@@ -5,19 +5,20 @@
         "view": {
             "createSubfolder": true,
             "subBones": ["itemViewModel", "itemView"],
-            "files": [],
-            "folders": ["App", "Views"]
+            "files": []
         },
         "itemViewModel": {
             "createSubfolder": false,
             "subBones": [],
             "placeholder": "Bone",
+            "folders": ["App", "Views"],
             "files": ["ItemViewModel/BoneItemViewModel.swift"]
         },
         "itemView": {
             "createSubfolder": false,
             "subBones": [],
             "placeholder": "Bone",
+            "folders": ["App", "Views"],
             "files": ["ItemView/BoneItemView.swift", "ItemView/BoneItemView.xib"]
         }
     }
