@@ -2,6 +2,7 @@ import Boomerang
 import RxSwift
 import Action
 import RxCocoa
+import ModelLayer
 
 final class ___BonePlaceholder___ItemViewModel : ItemViewModelType {
     

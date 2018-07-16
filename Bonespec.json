@@ -36,7 +36,7 @@
       "description": "Creates a ListViewModel",
       "folderPath": "App/ViewControllers",
       "targets" : ["App"],
-      "files": ["ListViewModel/BoneListViewModel.swift"]
+      "files": ["ListViewModel/BoneViewModel.swift"]
     },
 
     "listViewController": {

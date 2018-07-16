@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="___BonePlaceholder___ListViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="___BonePlaceholder___ViewController" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="gcL-bE-0i4" id="lCT-3S-Y1q"/>
                 <outlet property="view" destination="iN0-l3-epB" id="vA2-rI-z47"/>

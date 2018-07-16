@@ -6,7 +6,7 @@ import RxSwift
 import RxCocoa
 import ModelLayer
 
-class ___BonePlaceholder___ListViewModel: SceneViewModelType, ListViewModelType, SelectableViewModelType {
+class ___BonePlaceholder___ViewModel: SceneViewModelType, ListViewModelType, SelectableViewModelType {
 
     var sceneIdentifier: SceneIdentifier = SceneIdentifier.___BonePlaceholderFirstLowercased___
     var dataHolder: ListDataHolderType
