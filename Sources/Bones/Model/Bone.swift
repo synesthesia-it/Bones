@@ -1,7 +1,6 @@
 import Foundation
 import Gloss
 
-
 class ___BonePlaceholder___: Glossy {
     var id:String
     
@@ -18,5 +17,4 @@ class ___BonePlaceholder___: Glossy {
             "id" ~~> id
             ])
     }
-  
 }
