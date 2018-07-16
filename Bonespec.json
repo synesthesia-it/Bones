@@ -2,7 +2,7 @@
     "version": "0.1",
     "sourcesBaseFolder": "Sources/Bones",
     "bones": {
-        "view": {
+        "viewSection": {
             "createSubfolder": true,
             "subBones": ["itemViewModel", "itemView"],
             "files": []
@@ -20,6 +20,25 @@
             "placeholder": "Bone",
             "folders": ["App", "Views"],
             "files": ["ItemView/BoneItemView.swift", "ItemView/BoneItemView.xib"]
+        },
+        "listSection": {
+            "createSubfolder": true,
+            "subBones": ["listViewModel", "listViewController"],
+            "files": []
+        },
+        "listViewModel": {
+            "createSubfolder": false,
+            "subBones": [],
+            "placeholder": "Bone",
+            "folders": ["App", "ViewControllers"],
+            "files": ["ListViewModel/BoneListViewModel.swift"]
+        },
+        "listViewController": {
+            "createSubfolder": false,
+            "subBones": [],
+            "placeholder": "Bone",
+            "folders": ["App", "ViewControllers"],
+            "files": ["ListViewController/BoneViewController.swift", "ListViewController/BoneViewController.xib"]
         }
     }
 }
