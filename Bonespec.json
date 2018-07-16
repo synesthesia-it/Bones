@@ -23,14 +23,16 @@
       "subBones": [],
       "placeholder": "Bone",
       "folderPath": "App/Views",
+      "targets" : ["App"],
       "files": ["ItemViewModel/BoneItemViewModel.swift"]
     },
-    
+
     "itemView": {
       "description": "Creates an ItemView with xib",
       "subBones": [],
       "placeholder": "Bone",
       "folderPath": "App/Views",
+      "targets" : ["App"],
       "files": ["ItemView/BoneItemView.swift", "ItemView/BoneItemView.xib"]
     },
 
@@ -39,6 +41,7 @@
       "subBones": [],
       "placeholder": "Bone",
       "folderPath": "App/ViewControllers",
+      "targets" : ["App"],
       "files": ["ListViewModel/BoneListViewModel.swift"]
     },
 
@@ -47,7 +50,16 @@
       "subBones": [],
       "placeholder": "Bone",
       "folderPath": "App/ViewControllers",
+      "targets" : ["App"],
       "files": ["ListViewController/BoneViewController.swift", "ListViewController/BoneViewController.xib"]
+    },
+    
+    "model": {
+      "description": "Creates a model",
+      "placeholder": "Bone",
+      "folderPath": "ModelLayer/Models",
+      "targets" : ["ModelLayer"],
+      "files": ["Model/Bone.swift"]
     }
   }
 }
