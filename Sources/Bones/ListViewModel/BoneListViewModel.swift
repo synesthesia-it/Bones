@@ -11,14 +11,11 @@ class ___BonePlaceholder___ListViewModel: SceneViewModelType, ListViewModelType,
     var sceneIdentifier: SceneIdentifier = SceneIdentifier.___BonePlaceholderFirstLowercased___
     var dataHolder: ListDataHolderType
     var title: String = ""
+    
     lazy var selection: Selection = Selection {[weak self] input in
         switch input {
         case .item(let indexPath):
-            
             if let model = self?.model(atIndex: indexPath) {
-                
-                default : break
-                }
             }
         default : break
         }
@@ -27,7 +24,7 @@ class ___BonePlaceholder___ListViewModel: SceneViewModelType, ListViewModelType,
 
     init() {
         let data:Observable<ModelStructure>
-        data = .just(ModelStructure.empty())
+        data = .just(ModelStructure.empty)
         dataHolder = ListDataHolder(data: data)
     }
 
