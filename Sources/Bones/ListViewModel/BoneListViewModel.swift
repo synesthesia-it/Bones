@@ -8,7 +8,7 @@ import ModelLayer
 
 class ___BonePlaceholder___ListViewModel: SceneViewModelType, ListViewModelType, SelectableViewModelType {
 
-    var sceneIdentifier: SceneIdentifier = SceneIdentifier.___BonePlaceholderLowercased___
+    var sceneIdentifier: SceneIdentifier = SceneIdentifier.___BonePlaceholderFirstLowercased___
     var dataHolder: ListDataHolderType
     var title: String = ""
     lazy var selection: Selection = Selection {[weak self] input in
