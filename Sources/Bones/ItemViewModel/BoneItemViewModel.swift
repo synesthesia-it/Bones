@@ -1,3 +1,7 @@
+import Boomerang
+import RxSwift
+import Action
+import RxCocoa
 
 final class ___BonePlaceholder___ItemViewModel : ItemViewModelType {
     
