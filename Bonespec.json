@@ -1,44 +1,53 @@
 {
-    "version": "0.1",
-    "sourcesBaseFolder": "Sources/Bones",
-    "bones": {
-        "viewSection": {
-            "createSubfolder": true,
-            "subBones": ["itemViewModel", "itemView"],
-            "files": []
-        },
-        "itemViewModel": {
-            "createSubfolder": false,
-            "subBones": [],
-            "placeholder": "Bone",
-            "folders": ["App", "Views"],
-            "files": ["ItemViewModel/BoneItemViewModel.swift"]
-        },
-        "itemView": {
-            "createSubfolder": false,
-            "subBones": [],
-            "placeholder": "Bone",
-            "folders": ["App", "Views"],
-            "files": ["ItemView/BoneItemView.swift", "ItemView/BoneItemView.xib"]
-        },
-        "listSection": {
-            "createSubfolder": true,
-            "subBones": ["listViewModel", "listViewController"],
-            "files": []
-        },
-        "listViewModel": {
-            "createSubfolder": false,
-            "subBones": [],
-            "placeholder": "Bone",
-            "folders": ["App", "ViewControllers"],
-            "files": ["ListViewModel/BoneListViewModel.swift"]
-        },
-        "listViewController": {
-            "createSubfolder": false,
-            "subBones": [],
-            "placeholder": "Bone",
-            "folders": ["App", "ViewControllers"],
-            "files": ["ListViewController/BoneViewController.swift", "ListViewController/BoneViewController.xib"]
-        }
+  "version": "0.1",
+  "sourcesBaseFolder": "Sources/Bones",
+  "bones": {
+
+    "fullSection": {
+      "description": "Creates a ListViewController with xib and ListViewModel, and an ItemView with xib and viewModel",
+      "subBones": ["viewSection", "viewControllerSection"]
+    },
+
+    "viewSection": {
+      "description": "Creates an ItemView with xib and viewModel",
+      "subBones": ["itemViewModel", "itemView"]
+    },
+
+    "viewControllerSection": {
+      "description": "Creates a ListViewController with xib and viewModel",
+      "subBones": ["listViewModel", "listViewController"]
+    },
+
+    "itemViewModel": {
+      "description": "Creates an ItemViewModel",
+      "subBones": [],
+      "placeholder": "Bone",
+      "folderPath": "App/Views",
+      "files": ["ItemViewModel/BoneItemViewModel.swift"]
+    },
+    
+    "itemView": {
+      "description": "Creates an ItemView with xib",
+      "subBones": [],
+      "placeholder": "Bone",
+      "folderPath": "App/Views",
+      "files": ["ItemView/BoneItemView.swift", "ItemView/BoneItemView.xib"]
+    },
+
+    "listViewModel": {
+      "description": "Creates a ListViewModel",
+      "subBones": [],
+      "placeholder": "Bone",
+      "folderPath": "App/ViewControllers",
+      "files": ["ListViewModel/BoneListViewModel.swift"]
+    },
+
+    "listViewController": {
+      "description": "Creates ListViewController with xib",
+      "subBones": [],
+      "placeholder": "Bone",
+      "folderPath": "App/ViewControllers",
+      "files": ["ListViewController/BoneViewController.swift", "ListViewController/BoneViewController.xib"]
     }
+  }
 }
