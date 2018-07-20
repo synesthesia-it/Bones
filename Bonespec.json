@@ -1,6 +1,7 @@
 {
   "version": "0.1",
   "sourcesBaseFolder": "Sources/Bones",
+  "name": "Bones",
   "bones": {
 
     "fullSection": {
