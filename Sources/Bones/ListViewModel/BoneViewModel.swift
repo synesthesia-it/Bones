@@ -17,13 +17,13 @@ class ___BonePlaceholder___ViewModel: SceneViewModelType, ListViewModelType, Sel
         case .item(let indexPath):
             if let model = self?.model(atIndex: indexPath) {
             }
-        default : break
+        default: break
         }
         return self?.baseSwitch(input: input) ?? .empty()
     }
 
     init() {
-        let data:Observable<ModelStructure>
+        let data: Observable<ModelStructure>
         data = .just(ModelStructure.empty)
         dataHolder = ListDataHolder(data: data)
     }

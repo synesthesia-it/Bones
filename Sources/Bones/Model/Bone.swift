@@ -3,9 +3,9 @@ import Gloss
 import Boomerang
 
 public class ___BonePlaceholder___: Glossy, ModelType {
-    var id:String
+    var id: String
     
-    public required init?(json: JSON) {
+    public required init? (json: JSON) {
         
         guard let id: String = "id" <~~ json
             else { return nil }

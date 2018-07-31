@@ -6,7 +6,7 @@ import RxCocoa
 
 class ___BonePlaceholder___ItemView: UIView, ViewModelBindable, EmbeddableView {
     
-    var viewModel:ItemViewModelType?
+    var viewModel: ItemViewModelType?
     
     override func awakeFromNib() {
         super.awakeFromNib()
