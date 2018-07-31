@@ -28,7 +28,7 @@ class ___BonePlaceholder___ViewModel: SceneViewModelType, ListViewModelType, Sel
         dataHolder = ListDataHolder(data: data)
     }
 
-    func itemViewModel(fromModel model: ModelType) -> ItemViewModelType? {
+    func itemViewModel (fromModel model: ModelType) -> ItemViewModelType? {
         switch model {
         default : return model as? ItemViewModelType
         }
