@@ -3,6 +3,14 @@
   "sourcesBaseFolder": "Sources/Bones",
   "name": "Bones",
   "bones": [
+    {
+      "name": "model",
+      "description": "Creates a model",
+      "folderPath": "ModelLayer/Models",
+      "createSubfolder": false,
+      "targets" : ["ModelLayer"],
+      "files": ["Model/Bone.swift"]
+    },
 
     {
       "name": "fullSection",
@@ -52,15 +60,8 @@
       "folderPath": "App/ViewControllers",
       "targets" : ["App"],
       "files": ["ListViewController/BoneViewController.swift", "ListViewController/BoneViewController.xib"]
-    },
-
-    {
-      "name": "model",
-      "description": "Creates a model",
-      "folderPath": "ModelLayer/Models",
-      "createSubfolder": false,
-      "targets" : ["ModelLayer"],
-      "files": ["Model/Bone.swift"]
     }
+
+
   ]
 }
