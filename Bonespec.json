@@ -13,24 +13,6 @@
     },
 
     {
-      "name": "fullSection",
-      "description": "Creates a ListViewController with xib and ListViewModel, and an ItemView with xib and viewModel",
-      "subBones": ["viewSection", "viewControllerSection"]
-    },
-
-    {
-      "name": "viewSection",
-      "description": "Creates an ItemView with xib and viewModel",
-      "subBones": ["itemViewModel", "itemView"]
-    },
-
-    {
-      "name": "viewControllerSection",
-      "description": "Creates a ListViewController with xib and viewModel",
-      "subBones": ["listViewModel", "listViewController"]
-    },
-
-    {
       "name": "itemViewModel",
       "description": "Creates an ItemViewModel",
       "folderPath": "App/Views",
@@ -47,6 +29,12 @@
     },
 
     {
+      "name": "viewSection",
+      "description": "Creates an ItemView with xib and viewModel",
+      "subBones": ["itemViewModel", "itemView"]
+    },
+
+    {
       "name": "listViewModel",
       "description": "Creates a ListViewModel",
       "folderPath": "App/ViewControllers",
@@ -60,8 +48,19 @@
       "folderPath": "App/ViewControllers",
       "targets" : ["App"],
       "files": ["ListViewController/BoneViewController.swift", "ListViewController/BoneViewController.xib"]
-    }
+    },
 
+    {
+      "name": "listViewControllerSection",
+      "description": "Creates a ListViewController with xib and viewModel",
+      "subBones": ["listViewModel", "listViewController"]
+    },
+
+    {
+      "name": "fullSection",
+      "description": "Creates a ListViewController with xib and ListViewModel, and an ItemView with xib and viewModel",
+      "subBones": ["viewSection", "listViewControllerSection"]
+    }
 
   ]
 }
