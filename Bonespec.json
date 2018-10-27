@@ -1,21 +1,34 @@
 {
   "version": "0.2",
   "sourcesBaseFolder": "Sources/Bones",
+  "destinationBaseFolder": "",
   "name": "Bones",
   "bones": [
     {
       "name": "model",
       "description": "Creates a model",
-      "folderPath": "ModelLayer/Models",
+      "folderPath": "Sources/ModelLayer/Models",
       "createSubfolder": false,
       "targets" : ["ModelLayer"],
       "files": ["Model/Bone.swift"]
     },
-
+    {
+      "name": "modelTests",
+      "description": "Creates some tests for a model",
+      "folderPath": "Tests/ModelLayerTests",
+      "createSubfolder": true,
+      "targets": ["ModelLayerTests"],
+      "files": ["ModelTests/Bone_list.json","ModelTests/Bone_singleItem.json","ModelTests/BoneTests.swift"]
+    },
+    {
+      "name": "modelWithTests",
+      "description": "Creates a model with associated tests",
+      "subBones": ["model", "modelTests"]
+    },
     {
       "name": "itemViewModel",
       "description": "Creates an ItemViewModel",
-      "folderPath": "App/Views",
+      "folderPath": "Sources/App/Views",
       "targets" : ["App"],
       "files": ["ItemViewModel/BoneItemViewModel.swift"]
     },
@@ -23,7 +36,7 @@
     {
       "name": "itemView",
       "description": "Creates an ItemView with xib",
-      "folderPath": "App/Views",
+      "folderPath": "Sources/App/Views",
       "targets" : ["App"],
       "files": ["ItemView/BoneItemView.swift", "ItemView/BoneItemView.xib"]
     },
@@ -37,7 +50,7 @@
     {
       "name": "listViewModel",
       "description": "Creates a ListViewModel",
-      "folderPath": "App/ViewControllers",
+      "folderPath": "Sources/App/ViewControllers",
       "targets" : ["App"],
       "files": ["ListViewModel/BoneViewModel.swift"]
     },
@@ -45,7 +58,7 @@
     {
       "name": "listViewController",
       "description": "Creates ListViewController with xib",
-      "folderPath": "App/ViewControllers",
+      "folderPath": "Sources/App/ViewControllers",
       "targets" : ["App"],
       "files": ["ListViewController/BoneViewController.swift", "ListViewController/BoneViewController.xib"]
     },
