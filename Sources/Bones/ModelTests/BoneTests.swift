@@ -11,10 +11,10 @@ class ___BonePlaceholder___Spec: QuickSpec {
         }
         
         describe("a single ___BonePlaceholder___") {
-            var ___BonePlaceholderLowercased___:___BonePlaceholder___!
+            var ___BonePlaceholderFirstLowercased___:___BonePlaceholder___!
             context("when is Test") {
                 beforeEach {
-                    ___BonePlaceholderLowercased___ = Show(data: "___BonePlaceholder___singleItem".jsonMock())
+                    ___BonePlaceholderFirstLowercased___ = Show(data: "___BonePlaceholder___singleItem".jsonMock())
                 }
                 it ("should exist") {
                     expect(___BonePlaceholder___).notTo(beNil())
