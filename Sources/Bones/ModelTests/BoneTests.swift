@@ -14,7 +14,7 @@ class ___BonePlaceholder___Spec: QuickSpec {
             var ___BonePlaceholderFirstLowercased___:___BonePlaceholder___!
             context("when is Test") {
                 beforeEach {
-                    ___BonePlaceholderFirstLowercased___ = Show(data: "___BonePlaceholder___singleItem".jsonMock())
+                    ___BonePlaceholderFirstLowercased___ = Show(data: "___BonePlaceholder____singleItem".jsonMock())
                 }
                 it ("should exist") {
                     expect(___BonePlaceholder___).notTo(beNil())
@@ -30,7 +30,7 @@ class ___BonePlaceholder___Spec: QuickSpec {
                 var o:Observable<[___BonePlaceholder___]>!
                 
                 beforeEach {
-                    Dependency.register("___BonePlaceholder___list".jsonMock(), for: TVMazeAPI.shows)
+                    Dependency.register("___BonePlaceholder____list".jsonMock(), for: TVMazeAPI.shows)
                     o = DataManager.rx.___BonePlaceholder___s().share(replay: 1, scope: .forever)
                 }
                 
