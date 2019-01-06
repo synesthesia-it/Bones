@@ -5,7 +5,7 @@ import Boomerang
 import RxSwift
 import RxCocoa
 
-class ___BonePlaceholder___ViewController: UIViewController, ViewModelBindable, SelectableViewController, Collectionable, UICollectionViewDelegateFlowLayout {
+class {{ name|firstUppercase }}ViewController: UIViewController, ViewModelBindable, SelectableViewController, Collectionable, UICollectionViewDelegateFlowLayout {
     
     var viewModel: (ListViewModelType & SelectableViewModelType)?
 
@@ -16,7 +16,7 @@ class ___BonePlaceholder___ViewController: UIViewController, ViewModelBindable, 
     }
     
     func bind(to viewModel: ViewModelType?) {
-        guard let viewModel = viewModel as? ___BonePlaceholder___ViewModel else { return }
+        guard let viewModel = viewModel as? {{ name|firstUppercase }}ViewModel else { return }
         self.viewModel = viewModel
         self.collectionView.delegate = self
         self.collectionView.bind(to: viewModel)

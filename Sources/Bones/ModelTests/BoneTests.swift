@@ -4,40 +4,40 @@ import RxSwift
 import Nimble
 @testable import ModelLayer
 
-class ___BonePlaceholder___Spec: QuickSpec {
+class {{ name|firstUppercase }}Spec: QuickSpec {
     override func spec() {
         beforeEach {
             setupForTests()
         }
         
-        describe("a single ___BonePlaceholder___") {
-            var ___BonePlaceholderFirstLowercased___:___BonePlaceholder___!
+        describe("a single {{ name|firstUppercase }}") {
+            var {{ name|firstLowercase }}:{{ name|firstUppercase }}!
             context("when is Test") {
                 beforeEach {
-                    ___BonePlaceholderFirstLowercased___ = Show(data: "___BonePlaceholder____singleItem".jsonMock())
+                    {{ name|firstLowercase }} = Show(data: "{{ name|firstUppercase }}_singleItem".jsonMock())
                 }
                 it ("should exist") {
-                    expect(___BonePlaceholder___).notTo(beNil())
+                    expect({{ name|firstUppercase }}).notTo(beNil())
                 }
                 it("should have an ID") {
-                    expect(___BonePlaceholder___.id).to(equal("1"))
+                    expect({{ name|firstUppercase }}.id).to(equal("1"))
                 }
             }
         }
         
-        describe("a ___BonePlaceholder___ list") {
+        describe("a {{ name|firstUppercase }} list") {
             context("when has a single item") {
-                var o:Observable<[___BonePlaceholder___]>!
+                var o:Observable<[{{ name|firstUppercase }}]>!
                 
                 beforeEach {
-                    Dependency.register("___BonePlaceholder____list".jsonMock(), for: TVMazeAPI.shows)
-                    o = DataManager.rx.___BonePlaceholder___s().share(replay: 1, scope: .forever)
+                    Dependency.register("{{ name|firstUppercase }}_list".jsonMock(), for: TVMazeAPI.shows)
+                    o = DataManager.rx.{{ name|firstLowercase }}s().share(replay: 1, scope: .forever)
                 }
                 
-                it("should return a single ___BonePlaceholder___ object") {
+                it("should return a single {{ name|firstUppercase }} object") {
                     expect(o).first.to(haveCount(1))
                     expect(o).first.notTo(haveCount(2))
-                    expect(o.any).first.to(beAKindOf([___BonePlaceholder___].self))
+                    expect(o.any).first.to(beAKindOf([{{ name|firstUppercase }}].self))
                 }
             }
         }

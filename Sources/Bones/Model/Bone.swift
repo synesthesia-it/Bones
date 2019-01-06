@@ -2,7 +2,7 @@ import Foundation
 import Gloss
 import Boomerang
 
-public class ___BonePlaceholder___: Glossy, ModelType {
+public class {{ name|firstUppercase }}: Glossy, ModelType {
     var id: String
     
     public required init? (json: JSON) {

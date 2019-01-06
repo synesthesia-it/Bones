@@ -4,12 +4,12 @@ import Action
 import RxCocoa
 import ModelLayer
 
-final class ___BonePlaceholder___ItemViewModel: ItemViewModelType {
+final class {{ name|firstUppercase }}ItemViewModel: ItemViewModelType {
     
     var model: ItemViewModelType.Model
-    var itemIdentifier: ListIdentifier = View.___BonePlaceholderFirstLowercased___
+    var itemIdentifier: ListIdentifier = View.{{ name|firstLowercase }}
     
-    init(model: ___BonePlaceholder___) {
+    init(model: {{ name|firstUppercase }}) {
         self.model = model
     }
 }

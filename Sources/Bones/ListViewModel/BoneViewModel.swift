@@ -6,10 +6,10 @@ import RxSwift
 import RxCocoa
 import ModelLayer
 
-class ___BonePlaceholder___ViewModel: SceneViewModelType, ListViewModelType, SelectableViewModelType {
+class {{ name|firstUppercase }}ViewModel: SceneViewModelType, ListViewModelType, SelectableViewModelType {
 
-    var sceneIdentifier: SceneIdentifier = SceneIdentifier.___BonePlaceholderFirstLowercased___
-    var dataHolder: ListDataHolderType
+    var sceneIdentifier: SceneIdentifier = SceneIdentifier.{{ name|firstLowercase }}
+    var dataHolder: ListDataHolderType = ListDataHolder()
     var title: String = ""
     
     lazy var selection: Selection = Selection {[weak self] input in

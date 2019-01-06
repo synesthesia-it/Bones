@@ -4,7 +4,7 @@ import RxSwift
 import Action
 import RxCocoa
 
-class ___BonePlaceholder___ItemView: UIView, ViewModelBindable, EmbeddableView {
+class {{ name|firstUppercase }}ItemView: UIView, ViewModelBindable, EmbeddableView {
     
     var viewModel: ItemViewModelType?
     
@@ -13,7 +13,7 @@ class ___BonePlaceholder___ItemView: UIView, ViewModelBindable, EmbeddableView {
     }
     
     func bind(to viewModel: ViewModelType?) {
-        guard let viewModel = viewModel as? ___BonePlaceholder___ItemViewModel else {
+        guard let viewModel = viewModel as? {{ name|firstUppercase }}ItemViewModel else {
             return
         }
         self.viewModel = viewModel
